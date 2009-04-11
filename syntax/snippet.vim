@@ -1,6 +1,6 @@
 syn match snipComment '^#.*'
-syn match placeHolder '\${\d\(:.\{-}\)\=}' contains=snipCommand
-syn match tabStop '\$\d'
+syn match placeHolder '\${\d\+\(:.\{-}\)\=}' contains=snipCommand
+syn match tabStop '\$\d\+'
 syn match snipCommand '`.\{-}`'
 syn match snippet '^snippet.*' transparent contains=multiSnipText,snipKeyword
 syn match multiSnipText '\w\+ \zs.*' contained
